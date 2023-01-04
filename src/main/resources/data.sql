@@ -11,9 +11,10 @@ DROP TABLE IF EXISTS users_roles;
         );
 
         INSERT INTO users (username, password, enabled) VALUES
-          ('admin', '$2a$10$e6H1Jgrft/scpmpzbMFO0uqF1gxqop73l5wOlwF30Aem6Tty1nI2G', true),
-          ('azhwani', '$2a$10$kWWOnNOiToOxcIQ7UJ.cB.XFAflYvMS5BPASR1eqqojc6H9ELWUfC', true),
-          ('guest', '$2a$10$SNsPkXTh0ryc82.D2HRJqOcY8sYh/TPnJW8WLqrERWkOq01ViWaCq', true);
+                          ('admin', '$2a$10$e6H1Jgrft/scpmpzbMFO0uqF1gxqop73l5wOlwF30Aem6Tty1nI2G', true),
+                          ('test', '$2a$12$lf.rrtw/P2SO5bNVQQaNOOGMmZGgYthKbTMkQ2Jv1gj7XjZUGOIva', true),
+                          ('guest', '$2a$10$SNsPkXTh0ryc82.D2HRJqOcY8sYh/TPnJW8WLqrERWkOq01ViWaCq', true);
+
 
         CREATE TABLE roles (
           id INT AUTO_INCREMENT  PRIMARY KEY,
